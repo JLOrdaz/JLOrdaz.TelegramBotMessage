@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <LangVersion>latest</LangVersion>
+    <Copyright>© 2020 Jose Luis Ordaz</Copyright>
+    <Authors>Jose Luis Ordaz</Authors>
+    <Company>Jose Luis Ordaz</Company>
+    <Product>JLOrdaz.TelegramBotMessage</Product>
+    <PackageTags>Telegram, Bot, Notify, Send Message, JLOrdaz</PackageTags>
+    <Description>Helpers for send message to Telgram Bot Chat</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>
