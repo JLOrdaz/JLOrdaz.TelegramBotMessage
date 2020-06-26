@@ -3,14 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <LangVersion>latest</LangVersion>
     <Copyright>© 2020 Jose Luis Ordaz</Copyright>
     <Authors>Jose Luis Ordaz</Authors>
     <Company>Jose Luis Ordaz</Company>
     <Product>JLOrdaz.TelegramBotMessage</Product>
-    <PackageTags>Telegram, Bot, Notify, Send Message, JLOrdaz</PackageTags>
+    <PackageTags>Telegram, Bot, Notify, Send Message, JLOrdaz, Error, Information, Warning</PackageTags>
     <Description>Helpers for send message to Telgram Bot Chat</Description>
+    <RepositoryUrl>https://github.com/JLOrdaz/JLOrdaz.TelegramBotMessage</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 

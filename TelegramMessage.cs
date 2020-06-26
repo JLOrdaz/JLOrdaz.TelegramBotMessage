@@ -25,7 +25,7 @@ namespace JLOrdaz.TelegramBotMessage
             RequestMessage requestMessage = new RequestMessage()
             {
                 chat_id = chatId,
-                text = message + $"\r {DateTime.Now.ToString()}",
+                text = message + System.Environment.NewLine + DateTime.Now.ToString(),
                 parse_mode = "markdown"
             };
             StringContent content = new StringContent(JsonSerializer.Serialize(requestMessage),Encoding.UTF8,"application/json");
