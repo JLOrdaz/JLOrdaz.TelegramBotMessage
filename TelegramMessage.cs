@@ -16,11 +16,11 @@ namespace JLOrdaz.TelegramBotMessage
         {
             apiUrl = new Uri(uriString: $"https://api.telegram.org/bot{tokenBot}/sendMessage");
             http = new HttpClient();
+            http.Timeout = new TimeSpan(0,0,10);
         }
 
         public async Task<string> SendMessage(string chatId, string message)
         {
-            http.Timeout = new TimeSpan(0,0,10);
 
             RequestMessage requestMessage = new RequestMessage()
             {
