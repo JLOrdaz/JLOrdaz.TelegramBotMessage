@@ -1,11 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>1.1.0</Version>
     <LangVersion>latest</LangVersion>
-    <Copyright>© 2020 Jose Luis Ordaz</Copyright>
+    <Copyright>© 2022 Jose Luis Ordaz</Copyright>
     <Authors>Jose Luis Ordaz</Authors>
     <Company>Jose Luis Ordaz</Company>
     <Product>JLOrdaz.TelegramBotMessage</Product>
@@ -15,11 +17,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
-  </ItemGroup>
-
+  
   <ItemGroup>
     <None Include="LICENSE" Pack="true" PackagePath="" />
   </ItemGroup>

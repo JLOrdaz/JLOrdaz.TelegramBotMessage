@@ -21,7 +21,6 @@ namespace JLOrdaz.TelegramBotMessage
 
         public async Task<string> SendMessage(string chatId, string message)
         {
-
             RequestMessage requestMessage = new RequestMessage()
             {
                 chat_id = chatId,
@@ -40,6 +39,5 @@ namespace JLOrdaz.TelegramBotMessage
         public string chat_id { get; set; }
         public string text { get; set; }
         public string parse_mode { get; set; }
-
     }
 }
