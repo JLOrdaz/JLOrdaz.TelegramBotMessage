@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <LangVersion>latest</LangVersion>
-    <Copyright>© 2022 Jose Luis Ordaz</Copyright>
+    <Copyright>© 2023 Jose Luis Ordaz</Copyright>
     <Authors>Jose Luis Ordaz</Authors>
     <Company>Jose Luis Ordaz</Company>
     <Product>JLOrdaz.TelegramBotMessage</Product>
@@ -16,10 +16,15 @@
     <RepositoryUrl>https://github.com/JLOrdaz/JLOrdaz.TelegramBotMessage</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   
   <ItemGroup>
     <None Include="LICENSE" Pack="true" PackagePath="" />
+    <None Include="README.md" Pack="true" PackagePath=""/>
   </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Text.Json" Version="7.0.2" />
+    </ItemGroup>
 
 </Project>

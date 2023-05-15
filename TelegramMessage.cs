@@ -36,8 +36,8 @@ namespace JLOrdaz.TelegramBotMessage
 
     class RequestMessage
     {
-        public string chat_id { get; set; }
-        public string text { get; set; }
-        public string parse_mode { get; set; }
+        public string? chat_id { get; set; }
+        public string? text { get; set; }
+        public string? parse_mode { get; set; }
     }
 }
