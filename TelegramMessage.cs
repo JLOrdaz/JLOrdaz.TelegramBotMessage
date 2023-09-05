@@ -21,6 +21,8 @@ namespace JLOrdaz.TelegramBotMessage
 
         public async Task<string> SendMessage(string chatId, string message)
         {
+            message = message.Replace("_", "");
+
             RequestMessage requestMessage = new RequestMessage()
             {
                 chat_id = chatId,
