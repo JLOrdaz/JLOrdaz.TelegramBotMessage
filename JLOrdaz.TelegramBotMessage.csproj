@@ -5,9 +5,9 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.2.1</Version>
+    <Version>1.2.2</Version>
     <LangVersion>latest</LangVersion>
-    <Copyright>© 2023 Jose Luis Ordaz</Copyright>
+    <Copyright>© 2024 Jose Luis Ordaz</Copyright>
     <Authors>Jose Luis Ordaz</Authors>
     <Company>Jose Luis Ordaz</Company>
     <Product>JLOrdaz.TelegramBotMessage</Product>
@@ -21,10 +21,10 @@
   
   <ItemGroup>
     <None Include="LICENSE" Pack="true" PackagePath="" />
-    <None Include="README.md" Pack="true" PackagePath=""/>
+    <None Include="README.md" Pack="true" PackagePath="" />
   </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="System.Text.Json" Version="7.0.2" />
+        <PackageReference Include="System.Text.Json" Version="8.0.4" />
     </ItemGroup>
 
 </Project>
