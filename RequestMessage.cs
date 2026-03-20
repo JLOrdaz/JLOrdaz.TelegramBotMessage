@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text.Json.Serialization;
 
 namespace JLOrdaz.TelegramBotMessage
 {
-    internal class RequestMessage
+    internal sealed class RequestMessage
     {
-        public string? chat_id { get; set; }
-        public string? text { get; set; }
-        public string? parse_mode { get; set; }
+        [JsonPropertyName("chat_id")]
+        public string ChatId { get; set; } = string.Empty;
+
+        [JsonPropertyName("text")]
+        public string Text { get; set; } = string.Empty;
+
+        [JsonPropertyName("parse_mode")]
+        public string? ParseMode { get; set; }
     }
 }

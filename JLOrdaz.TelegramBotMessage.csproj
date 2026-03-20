@@ -1,17 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.1</TargetFrameworks>
+        <TargetFrameworks>netstandard2.1;net10.0</TargetFrameworks>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<Version>1.3</Version>
+      <Version>2.0.0</Version>
 		<LangVersion>latest</LangVersion>
 		<Copyright>© 2025 Jose Luis Ordaz</Copyright>
 		<Authors>Jose Luis Ordaz</Authors>
 		<Company>Jose Luis Ordaz</Company>
 		<Product>JLOrdaz.TelegramBotMessage</Product>
-		<PackageTags>Telegram, Bot, Notify, Send Message, JLOrdaz, Error, Information, Warning</PackageTags>
-		<Description>Helpers for send message to Telgram Bot Chat</Description>
+        <PackageTags>Telegram, Bot, Notify, Send Message, JLOrdaz, Error, Information, Warning</PackageTags>
+		<Description>Helpers for sending messages to a Telegram bot chat</Description>
 		<RepositoryUrl>https://github.com/JLOrdaz/JLOrdaz.TelegramBotMessage</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -19,10 +19,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<None Include=".github\copilot-instructions.md" />
 		<None Include="LICENSE" Pack="true" PackagePath="" />
 		<None Include="README.md" Pack="true" PackagePath="" />
 	</ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="System.Text.Json" Version="9.0.0" />
+ <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+		<PackageReference Include="System.Text.Json" Version="10.0.5" />
 	</ItemGroup>
 </Project>
