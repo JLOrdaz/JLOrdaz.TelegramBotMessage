@@ -1,6 +1,8 @@
 # JLOrdaz.TelegramBotMessage
 
-`JLOrdaz.TelegramBotMessage` is a small .NET Standard 2.1 library for sending notification messages to a Telegram chat from your applications.
+`JLOrdaz.TelegramBotMessage` is a small library for sending notification messages to a Telegram chat from your applications.
+
+This is a `2.0.0` release with breaking changes and a modern multi-target setup.
 
 [![NuGet](https://img.shields.io/nuget/v/JLOrdaz.TelegramBotMessage?style=for-the-badge)](https://www.nuget.org/packages/JLOrdaz.TelegramBotMessage)
 
@@ -11,7 +13,12 @@
 - `async`/`await` friendly API
 - Cancellation support
 - Safe MarkdownV2 escaping for message content
-- Compatible with `.NET Standard 2.1`
+- Compatible with `netstandard2.1` and `net10.0`
+
+## Target Frameworks
+
+- `netstandard2.1`
+- `net10.0`
 
 ## Installation
 
@@ -64,7 +71,13 @@ new TelegramNotifier(string botToken, string chatId)
 - The library formats messages using Telegram MarkdownV2 mode.
 - Special characters are escaped automatically before sending.
 - MarkdownV2 reserved characters are handled for standard notification text and timestamps.
+- The public API is intentionally small and simple.
 - `TelegramNotifier` implements `IDisposable` and should be disposed when no longer needed.
+
+## Version
+
+- Current version: `2.0.0`
+- This version introduces breaking changes from earlier releases
 
 ## Package
 
